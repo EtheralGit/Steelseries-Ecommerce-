@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Nunito", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home_bg {
+  background: rgb(4, 0, 22);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 0, 22, 1) 6%,
+    rgba(0, 0, 0, 1) 47%,
+    rgba(3, 14, 50, 1) 88%,
+    rgba(2, 8, 33, 1) 100%,
+    rgba(2, 7, 38, 1) 100%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.auth_bg {
+  background: rgb(8, 0, 22);
+  background: linear-gradient(
+    90deg,
+    rgba(8, 0, 22, 1) 6%,
+    rgba(13, 21, 55, 1) 45%,
+    rgba(15, 28, 83, 1) 60%,
+    rgba(3, 14, 50, 1) 88%,
+    rgba(2, 12, 42, 1) 92%,
+    rgba(1, 9, 32, 1) 100%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blue_gradient {
+  background: linear-gradient(90deg, #1d2b53 0%, #1d24ca 100%);
+  filter: blur(150px);
+}
+
+.green_gradient {
+  background: linear-gradient(90deg, #78a083 0%, #87a922 100%);
+  filter: blur(150px);
+}
+
+.red_gradient {
+  background: linear-gradient(90deg, #872341 0%, #ff204e 100%);
+  filter: blur(250px);
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+
+.animate-scale {
+  animation: scale 0.1s ease;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: hsl(28, 12%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(28, 12%, 25%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(28, 12%, 35%);
+}
